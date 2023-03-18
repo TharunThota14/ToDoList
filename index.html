@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="heading">
+      <h1 class="main-heading">notNotion</h1>
+      <p class="sub-heading">Manage And Search Your Pending Tasks In Clicks!</p>
+    </section>
+
+    <section class="work">
+      <div class="search">
+        <form class="search-box-container">
+          <input
+            class="search-box"
+            type="text"
+            name="searchWord"
+            id=""
+            placeholder="search task"
+            autocomplete="off"
+          />
+          <i class="bi bi-x-circle reset"></i>
+        </form>
+      </div>
+
+      <div class="task">
+        <ul>
+          <li>
+            <span class="task-title">Learn HTML/CSS</span>
+            <i class="bi bi-trash3-fill remove"></i>
+          </li>
+          <li>
+            <span class="task-title">Learn JS</span>
+            <i class="bi bi-trash3-fill remove"></i>
+          </li>
+          <li>
+            <span class="task-title">Learn React</span>
+            <i class="bi bi-trash3-fill remove"></i>
+          </li>
+        </ul>
+        <form class="task-addition">
+          <input
+            class="add-task-box"
+            type="text"
+            name="addTask"
+            id=""
+            placeholder="add task"
+            autocomplete="off"
+          />
+          <input type="submit" value="Add" />
+        </form>
+      </div>
+
+      <div class="task-info">
+        <span class="task-content"></span>
+        <button>Clear All</button>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
